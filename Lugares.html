@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <link rel="stylesheet" href="style.css">
+     <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #8ed4e6;
+}
+header, footer {
+  background-color: #7592af;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+nav a {
+  margin: 0 10px;
+  color: rgb(127, 209, 19);
+  text-decoration: none;
+}
+section {
+  padding: 20px;
+}
+table {
+  width: 45%;
+  margin-top: 20px;
+}
+img {
+  margin: 10px;
+  border-radius: 8px;
+}
+form input, form textarea {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+}
+ </style>
+  <meta charset="UTF-8">
+  <title>Lugares Turísticos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Lugares Turísticos</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="lugares.html">Lugares Turísticos</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Lugares Turísticos</h2>
+    <table border="1">
+      <tr><th>Nombre</th><th>Ubicación</th></tr>
+      <tr><td>Machu Picchu</td><td>Ubicada en la provincia de Urubamba, en el departamento del Cuzco, en Perú</td></tr>
+      <tr><td>Laguna Huacachina</td><td>A 5 km minutos al oeste de la ciudad de Ica.</td></tr>
+      <tr><td>Parque nacional huascarán </td><td>Ubicada en las provincias de Yungay, Huaraz</td></tr>
+    </table>
+
+    <ul>
+      <li><strong>Machu Picchu:</strong>Un lugar místico lleno de una paz incomparable, Machu Picchu es uno de los lugares más visitados del mundo. A 2.300 metros sobre el nivel del mar, el destino es una de las 7 maravillas del mundo moderno, por ello no puedes dejar de visitarla.</li>
+      <li><strong>Laguna Huacachina</strong> La Laguna de Huacachina es un oasis en medio del desierto de Ica que está rodeado de dunas, eucaliptos, palmeras y los huarangos. .</li>
+      <li><strong>Parque nacional huascarán:</strong> El Parque Nacional Huascarán (PNH), localizado en la zona norte  centro del país, es una de las áreas naturales protegiás más emblemáticas del país puesto que protege una de las zonas con la mayor diversidad biológica y cultural que tiene el Perú.</li>
+    </ul>
+
+    <img src="Machu.jpg" width="300" alt="Machu Picchu">
+    <img src="Huacachina.jpg" width="300" alt="Laguna Huacachina">
+    <img src="ancash.jpg" width="300" alt="Parque nacional huascarán">
+  </section>
+
+  <section>
+    <h2>Como llegar a Machu Picchu</h2>
+    <video width="500" controls>
+      <source src="como llegar.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </section>
+  
+  <section>
+    <h2>Como llegar a la Laguna Huacachina</h2>
+    <video width="500" controls>
+      <source src="laguna.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </section>
+  
+  <section>
+    <h2>Como llegar al Parque nacional Huascarán</h2>
+    <video width="500" controls>
+      <source src="parque nacional.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </section>
+
+  <section>
+   <h2>Reserva tu tour</h2>
+    <form onsubmit="window.location.href='https://www.civitatis.com/es/peru'; return false;">
+  <label>Nombre:</label>
+  <input type="text" required><br>
+  <label>Correo:</label>
+  <input type="email" required><br>
+  <label>Comentarios:</label><br>
+  <textarea rows="4"></textarea><br>
+  <input type="submit" value="Enviar"> 
+</form>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Portal Turístico Cusco Mágico</p>
+  </footer>
+</body>
+</html>
